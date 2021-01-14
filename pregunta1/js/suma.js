@@ -1,9 +1,12 @@
-function suma(){
+function sumar(){
     var numero1=document.getElementById("numero1").value;
     var numero2=document.getElementById("numero2").value;
+    
     var suma=parseInt(numero1)+parseInt(numero2);
-    document.getElementById("suma").innerHTML=mensaje;
-    var mensaje=suma; 
+    
+    console-console.log(suma);
+    document.getElementById("suma").innerHTML=suma;
+    
 
 }
 
@@ -12,8 +15,9 @@ function resta(){
     var numero1=document.getElementById("numero1").value;
     var numero2=document.getElementById("numero2").value;
     var resta=parseInt(numero1)-parseInt(numero2);
-    var mensaje=resta;
-    document.getElementById("resta").innerHTML=mensaje;
+    
+    console.log(resta);
+    document.getElementById("resta").innerHTML=resta;
 }
 
 function divi(){
@@ -21,27 +25,30 @@ function divi(){
     var numero1=document.getElementById("numero1").value;
     var numero2=document.getElementById("numero2").value;
     var div=parseInt(numero1)/parseInt(numero2);
-    var mensaje=div;
-    document.getElementById("divi").innerHTML=mensaje;
+
+    console.log(div);
+    document.getElementById("divi").innerHTML=div;
 
 }
 
 function resto(){
     var numero1=document.getElementById("numero1").value;
     var numero2=document.getElementById("numero2").value;
-    var resto=parseInt(numero1)%parseInt(numero2);
-    var mensaje=resto;
-    document.getElementById("resto").innerHTML=mensaje;
+    var resto=parseFloat(numero1)%parseFloat(numero2);
+   
+    console.log(resto);
+    document.getElementById("resto").innerHTML=resto;
 
 
 
 }
 
 function nombre(){
-   var nombre=document.getElementById("nombre").value;
-    var mensaj=parseInt(nombre);
+  var nombre=prompt("ingrese tu nombre","")
+    
     var men="bienvenido";
-    document.getElementById("mensaje").innerHTML=men+mensaj;
+   alert("bienvenido"+" "+nombre);
+   
 
 
 
@@ -255,19 +262,20 @@ function coches(){
 }
 
 
-function suma(){
+function numero(){
 
 
     var numero=document.getElementById("numero").value;
     var mensaje=numero;
 
-    if (numero%2==0){
-        document.write("el numero es par")
+    if (mensaje%2==0){
+        
 
-
+       
+        document.getElementById("imprime").innerHTML="el numero es par";
 
     }  else {
-        document.write("el numero es  inpar")
+        document.getElementById("imprime").innerHTML="el numero es inpar";
 
 
     }
@@ -275,14 +283,45 @@ function suma(){
 
 function impuesto(){
     var total=document.getElementById("total").value;
-    var mensje=total;
+    var mensaje=parseInt(total)*1;
+    var men2=mensaje;
     var subtotal=parseInt(total)/1.18;
     var igv=subtotal*0.18;
      
-    var mensaje=resta;
-    document.getElementById("total").innerHTML=mensje;
+    document.getElementById("total").innerHTML=men2;
     document.getElementById("subtotal").innerHTML=subtotal;
     document.getElementById("igv").innerHTML=igv;
 
 
+}
+
+function boton1(){
+    console.log("mesa 1");
+}
+function boton2(){
+    console.log("mesa 2");
+}
+function boton3(){
+    console.log("mesa 3");
+}
+function boton4(){
+    console.log("mesa 4");
+}
+function boton5(){
+    console.log("mesa 5");
+}
+function boton6(){
+    console.log("mesa 6");
+}
+function boton7(){
+    console.log("mesa 7");
+}
+function boton8(){
+    console.log("mesa 8");
+}
+function boton9(){
+    console.log("mesa 9");
+}
+function boton10(){
+    console.log("mesa 10");
 }
