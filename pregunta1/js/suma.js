@@ -272,3 +272,17 @@ function suma(){
 
     }
 }
+
+function impuesto(){
+    var total=document.getElementById("total").value;
+    var mensje=total;
+    var subtotal=parseInt(total)/1.18;
+    var igv=subtotal*0.18;
+     
+    var mensaje=resta;
+    document.getElementById("total").innerHTML=mensje;
+    document.getElementById("subtotal").innerHTML=subtotal;
+    document.getElementById("igv").innerHTML=igv;
+
+
+}
